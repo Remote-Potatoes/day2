@@ -140,3 +140,33 @@ switch (favoriteDrink) {
 }
 
 console.clear();
+
+const mariesName = "Marie-Frederique Luce";
+
+console.log(mariesName[6]);
+
+for (let i = 0; i < mariesName.length; i++) {
+  console.log(mariesName[i]);
+}
+
+// for loop read in three parts
+// 1 -> initial value
+// 2 -> condition for the for loop to execute
+// 3 -> what should happen in the end of each iteration through the loop
+for (let i = mariesName.length; i >= 0; i--) {
+  console.log(mariesName[i]);
+}
+console.clear();
+
+// const, let, var
+
+// for ... of
+// whenever we do this loop, we lose the index. we just get the value at that specific index
+
+for (let current = 0; current < arrayOfPeople.length; current++) {
+  console.log("CURRENT PERSON IN THE ARRAY IS: ", arrayOfPeople[current]);
+}
+
+for (let currentPerson of arrayOfPeople) {
+  console.log("CURRENT PERSON IN THE ARRAY:", currentPerson);
+}
